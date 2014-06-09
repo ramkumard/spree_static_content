@@ -17,6 +17,12 @@
       <%= f.text_area :body, {:class => 'fullwidth'} %>
       <%= f.error_message_on :body %>
     <% end %>
+      
+    <%= f.field_container :user_sources do %>
+      <%= f.label :user_sources %> <span class="required">Comma seperated sources Ex: fb,sokfb,tokitaki</span><br />
+      <%= f.text_field :user_sources, :class => 'fullwidth title' %>
+      <%= f.error_message_on :user_sources %>
+    <% end %>
   </div>
   
   <div class="omega six columns">
