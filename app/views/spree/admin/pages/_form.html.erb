@@ -17,6 +17,11 @@
       <%= f.text_area :body, {:class => 'fullwidth'} %>
       <%= f.error_message_on :body %>
     <% end %>
+    <%= f.field_container :mobile_body do %>
+      <%= f.label :mobile_body %><span class="required">*</span><br />
+      <%= f.text_area :mobile_body, {:class => 'fullwidth'} %>
+      <%= f.error_message_on :mobile_body %>
+    <% end %>
   </div>
   
   <div class="omega six columns">
